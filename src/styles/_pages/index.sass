@@ -1,0 +1,214 @@
+.home_pro
+	margin: 2rem 0
+	margin-top: 6rem
+	.hinh
+		position: relative
+		.price
+			position: absolute
+			text-align: center
+			display: block
+			background: white
+			top: 79%
+			left: 50%
+			transform: translateX(-50%)
+			width: 17rem
+			height: 4.5rem
+			padding: .5rem
+	+media-breakpoint-up(sm)
+		.hinh
+			.price
+				left: 44%
+				width: 13rem
+				height: 3.5rem
+				h5
+					font-size: 1rem
+	+media-breakpoint-up(md)
+		.hinh
+			.price
+				left: 50%
+				width: 17rem
+				height: 4.5rem
+				h5
+					font-size: 1.2rem
+
+
+
+
+
+
+
+
+
+
+
+.home_pro1
+	margin-bottom: 8rem
+	.hinh1
+		position: relative
+		.price1
+			position: absolute
+			background: white
+			top: 78%
+			left: 50%
+			transform: translateX(-50%)
+			padding: .5rem
+			height: 4.5rem
+			width: 16rem
+			text-align: center
+	.hinh2
+		position: relative
+		.price2
+			position: absolute
+			background: white
+			top: 78%
+			left: 50%
+			transform: translateX(-50%)
+			padding: .5rem
+			height: 4.5rem
+			width: 16rem
+			text-align: center
+	.hinh3
+		position: relative
+		.price3
+			position: absolute
+			background: white
+			top: 78%
+			left: 50%
+			transform: translateX(-50%)
+			padding: .5rem
+			height: 4.5rem
+			width: 16rem
+			text-align: center
+	
+
+
+
+
+
+
+
+
+.home_pro2
+	background: #f3f4f7
+	img
+		width: 100%
+	h2
+		margin-top: 5rem
+		text-align: center
+		margin-bottom: 3rem
+	figcaption
+		margin: 3rem 0
+		text-align: center
+		.price
+			.nut
+				display: inline-block
+				background: #3c4d93
+				padding: .5rem 4rem
+				opacity: 0
+				a
+					color: white
+					text-decoration: none
+		&:hover,&:active
+			.price
+				.nut
+					opacity: 1
+	.about
+		text-align: center
+		margin-top: 1rem
+		.nut1
+			display: inline-block
+			background: #000
+			padding: .5rem 4rem
+			a
+				text-decoration: none
+				color: white
+		p
+			color: darken(#000,60%)
+	.hinh
+		margin-bottom: 4rem
+	+media-breakpoint-up(sm)
+		.hinh
+			position: relative
+		.about
+			position: absolute
+			top: 3%
+			left: 34%
+			transform: translateX(-50%)
+			.nut1
+				padding: .2rem 2rem
+				a
+					font-size: .7rem
+			.h3
+				font-size: 1rem
+			p
+				font-size: .8rem
+				margin: 0
+	+media-breakpoint-up(md)
+		.about
+			.nut1
+				padding: .2rem 3rem
+				a
+					font-size: 1rem
+			.h3
+				font-size: 1.8rem
+			p
+				font-size: 1rem
+	+media-breakpoint-up(lg)
+		.about
+			.nut1
+				padding: .5rem 4rem
+				a
+					font-size: 1.2rem
+			.h3
+				font-size: 2.5rem
+			p
+				font-size: 1.5rem
+				
+
+
+
+
+
+.home_baner01
+	.h3
+		text-align: center
+		margin-top: 4rem
+		margin-bottom: 3rem
+	figure
+		position: relative
+		margin: 2rem auto
+		figcaption
+			.gia
+				margin-top: 2rem
+				text-align: center
+				a
+					text-decoration: none
+					display: inline-block
+					border: .1rem solid #000
+					background: #fff
+					padding: 1rem
+	.owl-carousel.owl-theme
+		.owl-nav button.owl-next,.owl-nav button.owl-prev
+			background: #f3f4f7
+			display: inline-block
+			height: 2rem
+			width: 2rem
+			border-radius: 50%
+			color: darken(#FFF,20%)
+
+
+
+	+media-breakpoint-up(md)
+		figure
+			margin: auto auto
+			figcaption
+				.gia
+		.owl-carousel
+			.owl-prev
+				position: absolute
+				top: 50%
+				left: 5%
+			.owl-next
+				position: absolute
+				top: 50%
+				right: 5%
