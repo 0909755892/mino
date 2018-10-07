@@ -1,22 +1,23 @@
 <!-- ////////////// HEADER ////////////// -->
 header
 	.container
-		.row
-			.col-12.col-md-4
-				img.img-fluid(src="./img/logo.png", alt="")
-			.col.col-md-auto
-				ul.list-unstyled.text-small
-					li
-						a(href="") ABOUT US
-					li
-						a(href="") ALL PRODUCTS
-					li
-						a(href="") BEST SELLER
-					li
-						a(href="") EVENTS
-					li
-						a(href="") PHOTO REVIEW
-					li
-						a(href="") CONTACT US
+		nav.navbar.navbar-expand-lg.navbar-light
+			button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation")
+				span.navbar-toggler-icon
+			#navbarTogglerDemo01.collapse.navbar-collapse
+				img.navbar-brand.img-fluid(src="./img/logo.png", alt="")
+				.mr-auto
+				ul.navbar-nav.mt-2.mt-lg-0
+					li.nav-item
+						a.nav-link(href="") ABOUT US
+					li.nav-item
+						a.nav-link(href="") ALL PRODUCTS
+					li.nav-item
+						a.nav-link(href="") BEST SELLER
+					li.nav-item
+						a.nav-link(href="") PHOTO REVIEW
+					li.nav-item
+						a.nav-link(href="") CONTAST US
+		
 					
 <!-- ////////////// HEADER ////////////// -->

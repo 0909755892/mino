@@ -1,3 +1,13 @@
+
+.home_baner
+	
+	
+	
+	
+	
+	
+	
+	
 .home_pro
 	margin: 2rem 0
 	margin-top: 6rem
@@ -14,6 +24,8 @@
 			width: 17rem
 			height: 4.5rem
 			padding: .5rem
+			opacity: 0
+			
 	+media-breakpoint-up(sm)
 		.hinh
 			.price
@@ -25,11 +37,16 @@
 	+media-breakpoint-up(md)
 		.hinh
 			.price
+				
 				left: 50%
 				width: 17rem
 				height: 4.5rem
 				h5
 					font-size: 1.2rem
+		&:hover
+			.price
+				opacity: 1
+				transition: .5s all ease-in-out
 
 
 
@@ -55,6 +72,7 @@
 			height: 4.5rem
 			width: 16rem
 			text-align: center
+			opacity: 0
 	.hinh2
 		position: relative
 		.price2
@@ -67,6 +85,7 @@
 			height: 4.5rem
 			width: 16rem
 			text-align: center
+			opacity: 0
 	.hinh3
 		position: relative
 		.price3
@@ -79,7 +98,13 @@
 			height: 4.5rem
 			width: 16rem
 			text-align: center
-	
+			opacity: 0
+	&:hover
+		.hinh1,.hinh2,.hinh3
+			&:hover
+				.price1,.price2,.price3
+					opacity: 1
+					transition: .5s all ease-in-out
 
 
 

@@ -9,10 +9,12 @@ block variables
 //- Phần khai báo body
 block body
 	section.home_baner
-		.contrainer
-			.row
-				.col
-					img.img-fluid(src="./img/home_baner_01.png", alt="")
+		.owl-carousel
+			-for(x=1;x<4;x++)
+				.contrainer
+					.row
+						.col
+							img.img-fluid(src="./img/home_baner_0"+x+".png", alt="")
 	section.home_pro
 		.container
 			.row

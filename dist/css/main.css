@@ -6323,28 +6323,12 @@ html, body {
     width: auto; } }
 
 header {
-  min-height: 4rem;
-  background: #3c4d93;
+  background: red;
   position: fixed;
   width: 100%;
-  z-index: 10; }
-  header img {
-    width: 100%;
-    margin: .8rem 0; }
-  header .text-small {
-    display: flex;
-    margin: 1.5rem 0; }
-    header .text-small li a {
-      margin: 0 1rem;
-      color: #fff;
-      text-decoration: none; }
-
-header {
-  z-index: 0; }
-
-@media (min-width: 768px) {
-  header {
-    z-index: 11; } }
+  z-index: 999; }
+  header .navbar-nav .nav-item .nav-link {
+    color: #fff; }
 
 footer {
   background: #000;
@@ -6420,7 +6404,8 @@ footer {
       transform: translateX(-50%);
       width: 17rem;
       height: 4.5rem;
-      padding: .5rem; }
+      padding: .5rem;
+      opacity: 0; }
   @media (min-width: 576px) {
     .home_pro .hinh .price {
       left: 44%;
@@ -6434,7 +6419,10 @@ footer {
       width: 17rem;
       height: 4.5rem; }
       .home_pro .hinh .price h5 {
-        font-size: 1.2rem; } }
+        font-size: 1.2rem; }
+    .home_pro:hover .price {
+      opacity: 1;
+      transition: .5s all ease-in-out; } }
 
 .home_pro1 {
   margin-bottom: 8rem; }
@@ -6449,7 +6437,8 @@ footer {
       padding: .5rem;
       height: 4.5rem;
       width: 16rem;
-      text-align: center; }
+      text-align: center;
+      opacity: 0; }
   .home_pro1 .hinh2 {
     position: relative; }
     .home_pro1 .hinh2 .price2 {
@@ -6461,7 +6450,8 @@ footer {
       padding: .5rem;
       height: 4.5rem;
       width: 16rem;
-      text-align: center; }
+      text-align: center;
+      opacity: 0; }
   .home_pro1 .hinh3 {
     position: relative; }
     .home_pro1 .hinh3 .price3 {
@@ -6473,7 +6463,11 @@ footer {
       padding: .5rem;
       height: 4.5rem;
       width: 16rem;
-      text-align: center; }
+      text-align: center;
+      opacity: 0; }
+  .home_pro1:hover .hinh1:hover .price1, .home_pro1:hover .hinh1:hover .price2, .home_pro1:hover .hinh1:hover .price3, .home_pro1:hover .hinh2:hover .price1, .home_pro1:hover .hinh2:hover .price2, .home_pro1:hover .hinh2:hover .price3, .home_pro1:hover .hinh3:hover .price1, .home_pro1:hover .hinh3:hover .price2, .home_pro1:hover .hinh3:hover .price3 {
+    opacity: 1;
+    transition: .5s all ease-in-out; }
 
 .home_pro2 {
   background: #f3f4f7; }
